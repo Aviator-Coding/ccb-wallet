@@ -27,9 +27,6 @@ RUN add-apt-repository ppa:bitcoin/bitcoin && \
 
 WORKDIR /cryptocashback
 
-## Copy logrotate for shriniking logfiles
-#COPY ./scripts/cryptocashbackd_logrotate /etc/logrotate.d/
-
 ENV CCB_VERSION v1.0.0.1
 
 RUN git clone -b master https://github.com/CryptoCashBack-Hub/CCB.git . && \
